@@ -50,14 +50,26 @@ const paths = {
   },
 };
 
-const jsLibsPaths = [
-  "node_modules/jquery/dist/jquery.min.js",
-  "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js",
-];
+const jsLibsPaths = ["node_modules/jquery/dist/jquery.min.js", "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"];
 
-function jsLibs() {
-  return src(jsLibsPaths).pipe(concat("libs.min.js")).pipe(uglify()).pipe(dest("app/js")).pipe(browsersync.stream());
-}
+const cssLibsPaths = ["node_modules/choices.js/public/assets/styles/choices.min.css", "node_modules/nouislider/dist/nouislider.min.css"];
+
+const jsLibs = () => {
+  return src(jsLibsPaths)
+    .pipe(concat("libs.min.js"))
+    .pipe(uglify())
+    .pipe(dest(`${paths.dev.js}`))
+    .pipe(browsersync.stream());
+};
+
+const cssLibs = () => {
+  return src(cssLibsPaths)
+    .pipe(concat("libs.min.css"))
+    .pipe(autoPrefixer(["last 10 versions"]))
+    .pipe(cleancss({ level: { 1: { specialComments: 0 } } }))
+    .pipe(dest(`${paths.dev.css}`))
+    .pipe(browsersync.stream());
+};
 
 const js = () => {
   return src(`${paths.dev.js}/**/*.js`)
@@ -210,14 +222,10 @@ async function cleanBuild() {
 const startWatch = () => {
   watch([`${paths.dev.sass}/**/*.sass`, `!${paths.dev.sass}/libs/libs.sass`], { usePolling: true }, css);
   watch(`${paths.dev.pug}/**/*.pug`, { usePolling: true }, html);
-  watch(
-    [`${paths.dev.js}/main.js`, `${paths.dev.js}/modules/*.js`, `${paths.dev.js}/helpers/*.js`],
-    { usePolling: true },
-    js
-  );
+  watch([`${paths.dev.js}/main.js`, `${paths.dev.js}/modules/*.js`, `${paths.dev.js}/helpers/*.js`], { usePolling: true }, js);
   watch(`${paths.dev.img}/svg-sprite/*.svg`, { usePolling: true }, svgSprite);
 };
 
 export const compress = series(compressImages);
-export const build = series(cleanBuild, jsLibs, minJs, css, html, buildCopy, svgSprite);
-export default series(jsLibs, js, css, html, svgSprite, parallel(browserSync, startWatch));
+export const build = series(cleanBuild, jsLibs, cssLibs, minJs, css, html, buildCopy, svgSprite);
+export default series(jsLibs, cssLibs, js, css, html, svgSprite, parallel(browserSync, startWatch));

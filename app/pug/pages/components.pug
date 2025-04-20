@@ -10,9 +10,13 @@ html(lang="en")
       include ../layout/_header
 
       // Main
-      main.main.flex-grow-1.flex-shrink-1.pt-6
+      main.main.flex-grow-1.flex-shrink-1.pt-6.pb-6
         .container
-          .d-flex.gap-3.mb-6
+          .d-flex.mb-6
+            a.logo(href="/")
+              include ../svg/logo.svg
+
+          .d-flex.gap-3.mb-6.flex-wrap
             button.btn.btn-primary(type="button") Primary
             button.btn.btn-secondary(type="button") Secondary
             button.btn.btn-success(type="button") Success
@@ -25,18 +29,70 @@ html(lang="en")
             button.btn.btn-description(type="button") Link
           
           .row
-            .col-6.d-flex.align-items-center
-              input.form-control.bg-secondary.border-0(placeholder="Search" type="search" id="search")
-              label(for="search")
-                +icon('glass')
-            
-            .col-12 
-              button.btn.btn-danger.text-white Add to Cart
+            .col-6.mb-6
+              .d-flex.align-items-center.column-gap-3
+                input.form-control.fw-light.mw-md-486.border-0(placeholder="Search" type="search" id="search")
+                label(for="search")
+                  +icon('glass')
+
+          .row
+            .col-3.mb-6
+              .d-flex.align-items-center.mb-3
+                span.flex-grow-1 Default:
+                button.btn.btn-danger.text-white Add to Cart
+              .d-flex.align-items-center
+                span.flex-grow-1 Lg: 
+                button.btn.btn-danger.btn-lg.text-white Sign In
+
+            .col-12.mb-9
+              .d-flex.gap-5.align-items-start
+                span Selects:
+                
+                select.js-select(name="currency")
+                  option(value="usd") USD
+                  option(value="eur") EUR
+                  option(value="aud") AUD
+
+                select.js-select(name="language")
+                  option(value="eng") ENG
+                  option(value="rus") RUS
+
+                .choices--lg
+                  select.js-select(name="")
+                    option(value="USA Domestic 1") USA Domestic 1
+                    option(value="USA Domestic 2") USA Domestic 2
+                    option(value="USA Domestic 3") USA Domestic 3
+              
+            .col-12.mb-6
+              .d-flex.flex-column.gap-2
+                h1.text-danger.fw-normal h1. Heading
+                h2.text-danger.fw-normal h2. Heading
+                h3.text-danger.fw-normal h3. Heading
+
+            .col-3.mb-6
+              #range
+
+          .row
+            .col-3.mb-6
+              .input-group.product-counter.mw-77
+                button.btn.btn-counter.border-end-0.p-2.minus -
+                input.form-control.bg-transparent.border-gray-100.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
+                button.btn.btn-counter.border-start-0.p-2.plus +
+
+          .row
+            .col-4
+              form.row.needs-validation(action="#" novalidate)
+                .mb-4
+                  input.form-control.form-control-lg.fs-9.border-transparent(type="text" placeholder="Name" required)
+                  .invalid-feedback.fw-light Please fill this field
+                .mb-4
+                  input.form-control.form-control-lg.fs-9.border-transparent(type="email" placeholder="Email" required)
+                  .invalid-feedback.fw-light Please fill this field
+                .col
+                  button.btn.btn-danger.btn-lg.text-white.w-100(type="submit") Sign Up
 
 
       // Footer
       include ../layout/_footer
 
-    // Scripts
-    script(src="js/libs.min.js", defer)
-    script(src='js/main.bundle.js', defer)
+      include ../layout/_scripts

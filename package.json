@@ -50,6 +50,8 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.5",
     "bootstrap-select": "^1.13.18",
-    "jquery": "^3.7.1"
+    "choices.js": "^11.1.0",
+    "jquery": "^3.7.1",
+    "nouislider": "^15.8.1"
   }
 }
