@@ -13,6 +13,7 @@ import rename from "gulp-rename";
 import uglify from "gulp-uglify";
 import dotenv from "dotenv";
 import concat from "gulp-concat";
+import purgecss from "gulp-purgecss";
 
 // PUG
 import plumber from "gulp-plumber";
@@ -109,6 +110,20 @@ const css = () => {
     .pipe(sourcemaps.write())
     .pipe(dest(`${paths.dev.css}`))
     .pipe(browsersync.stream());
+};
+
+// Для удаления лишних классов в билде
+const purgeCss = () => {
+  return src(`${paths.dev.css}/main.min.css`)
+    .pipe(
+      purgecss({
+        content: [`${paths.dev.root}/**/*.html`, `${paths.dev.js}/**/*.js`, `${paths.dev.pug}/**/*.pug`],
+        safelist: {
+          standard: [/^is-/, /^has-/, /^show$/, /^collapse/, /^modal/],
+        },
+      })
+    )
+    .pipe(dest(`${paths.dev.css}`));
 };
 
 tinify.key = dotenv.config().parsed.TINYPNG_API_KEY;
@@ -227,5 +242,5 @@ const startWatch = () => {
 };
 
 export const compress = series(compressImages);
-export const build = series(cleanBuild, jsLibs, cssLibs, minJs, css, html, buildCopy, svgSprite);
+export const build = series(cleanBuild, jsLibs, cssLibs, minJs, css, html, purgeCss, buildCopy, svgSprite);
 export default series(jsLibs, cssLibs, js, css, html, svgSprite, parallel(browserSync, startWatch));
