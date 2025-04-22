@@ -1,4 +1,3 @@
-import { changeTheme } from "./modules/changeTheme.js";
 import { initChoices } from "./modules/initChoices.js";
 import { initDropdowns } from "./modules/initDropdowns.js";
 import { initRange } from "./modules/initRange.js";
@@ -12,5 +11,3 @@ window.addEventListener("DOMContentLoaded", function () {
   initRange();
   productCounter();
 });
-
-changeTheme();

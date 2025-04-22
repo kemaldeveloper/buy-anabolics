@@ -50,7 +50,7 @@ const paths = {
   },
 };
 
-const jsLibsPaths = ["node_modules/jquery/dist/jquery.min.js", "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"];
+const jsLibsPaths = ["node_modules/jquery/dist/jquery.min.js"];
 
 const cssLibsPaths = ["node_modules/choices.js/public/assets/styles/choices.min.css", "node_modules/nouislider/dist/nouislider.min.css"];
 

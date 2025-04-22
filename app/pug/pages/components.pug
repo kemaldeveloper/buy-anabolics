@@ -76,17 +76,17 @@ html(lang="en")
             .col-3.mb-6
               .input-group.product-counter.mw-77
                 button.btn.btn-counter.border-end-0.p-2.minus -
-                input.form-control.bg-transparent.border-gray-100.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
+                input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
                 button.btn.btn-counter.border-start-0.p-2.plus +
 
           .row
             .col-4
-              form.row.needs-validation(action="#" novalidate)
+              form.row.needs-validation(action="#" method="GET" novalidate)
                 .mb-4
-                  input.form-control.form-control-lg.fs-9.border-transparent(type="text" placeholder="Name" required)
+                  input.form-control.form-control-lg.fs-9.border-transparent(type="text" name="name" placeholder="Name" required)
                   .invalid-feedback.fw-light Please fill this field
                 .mb-4
-                  input.form-control.form-control-lg.fs-9.border-transparent(type="email" placeholder="Email" required)
+                  input.form-control.form-control-lg.fs-9.border-transparent(type="email" name="email" placeholder="Email" required)
                   .invalid-feedback.fw-light Please fill this field
                 .col
                   button.btn.btn-danger.btn-lg.text-white.w-100(type="submit") Sign Up
