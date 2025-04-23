@@ -63,13 +63,13 @@ html(lang="en")
                     option(value="USA Domestic 2") USA Domestic 2
                     option(value="USA Domestic 3") USA Domestic 3
               
-            .col-12.mb-6
+            .col-12.mb-9
               .d-flex.flex-column.gap-2
                 h1.text-danger.fw-normal h1. Heading
                 h2.text-danger.fw-normal h2. Heading
                 h3.text-danger.fw-normal h3. Heading
 
-            .col-3.mb-6
+            .col-3.mb-15
               #range
 
           .row
@@ -80,19 +80,37 @@ html(lang="en")
                 button.btn.btn-counter.border-start-0.p-2.plus +
 
           .row
-            .col-4
+            .col-4.mb-9
               form.row.needs-validation(action="#" method="GET" novalidate)
                 .mb-4
-                  input.form-control.form-control-lg.fs-9.border-transparent(type="text" name="name" placeholder="Name" required)
+                  input.form-control.form-control-lg.fs-18.border-transparent(type="text" name="name" placeholder="Name" required)
                   .invalid-feedback.fw-light Please fill this field
                 .mb-4
-                  input.form-control.form-control-lg.fs-9.border-transparent(type="email" name="email" placeholder="Email" required)
+                  input.form-control.form-control-lg.fs-18.border-transparent(type="email" name="email" placeholder="Email" required)
                   .invalid-feedback.fw-light Please fill this field
                 .col
                   button.btn.btn-danger.btn-lg.text-white.w-100(type="submit") Sign Up
 
+            .col-12
+              button.btn.btn-primary(data-bs-target="#newsModal" data-bs-toggle="modal") Open modal
+
 
       // Footer
       include ../layout/_footer
+
+      // Modal
+      .modal.fade#newsModal()
+        .modal-dialog.modal-dialog-centered
+          .modal-content.bg-transparent
+            .modal-header
+              button.btn-close.text-white(data-bs-dismiss="modal" aria-label="Close" type="button" style="--bs-btn-close-color: #ffffff !important")
+            .modal-body.bg-white
+              .bg-black
+                img.img-fluid(src="img/banners/banner-modal.jpg", alt="banner")
+                .text-white.pt-10.pb-11.px-12.fs-22.ls-5
+                  p.mb-6 🔥 Champions don’t wait — they act 🔥 Whether you’re grinding hard or going for the win, Ultima-Win gives you the edge you need. 
+                  p Get everything by this link: 
+                    a.link-danger.text-decoration-none(href="#") google.com
+  
 
       include ../layout/_scripts
