@@ -4,7 +4,7 @@ export const initChoices = () => {
   const selects = document.querySelectorAll(".js-select");
 
   selects.forEach((select) => {
-    const choices = new Choices(select, {
+    new Choices(select, {
       searchEnabled: false,
       itemSelectText: "",
       placeholder: false,
@@ -19,7 +19,5 @@ export const initChoices = () => {
         listSingle: ["choices__list--single", "z-2", "pt-0", "pb-0", "ps-0"],
       },
     });
-
-    // choices.showDropdown();
   });
 };

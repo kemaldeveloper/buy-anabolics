@@ -39,6 +39,9 @@ body {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 0;
+.no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }

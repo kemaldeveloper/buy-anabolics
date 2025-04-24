@@ -18,6 +18,11 @@ $utilities: map-merge(
       property: letter-spacing,
       class: ls,
       values: $letter-spacings
+    ),
+    "opacity": (
+      property: opacity,
+      class: opacity,
+      values: $opacities
     )
   )
 );
