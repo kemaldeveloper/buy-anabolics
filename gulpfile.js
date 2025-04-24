@@ -40,7 +40,7 @@ import svgstore from "gulp-svgstore";
 const paths = {
   dev: {
     root: "app",
-    sass: "app/sass",
+    scss: "app/scss",
     css: "app/css",
     js: "app/js",
     pug: "app/pug",
@@ -96,7 +96,7 @@ const minJs = () => {
 };
 
 const css = () => {
-  return src(`${paths.dev.sass}/main.sass`)
+  return src(`${paths.dev.scss}/main.scss`)
     .pipe(sourcemaps.init())
     .pipe(
       sass.sync().on("error", function (error) {
@@ -235,7 +235,7 @@ async function cleanBuild() {
 }
 
 const startWatch = () => {
-  watch([`${paths.dev.sass}/**/*.sass`, `!${paths.dev.sass}/libs/libs.sass`], { usePolling: true }, css);
+  watch([`${paths.dev.scss}/**/*.scss`, `!${paths.dev.scss}/libs/libs.scss`], { usePolling: true }, css);
   watch(`${paths.dev.pug}/**/*.pug`, { usePolling: true }, html);
   watch([`${paths.dev.js}/main.js`, `${paths.dev.js}/modules/*.js`, `${paths.dev.js}/helpers/*.js`], { usePolling: true }, js);
   watch(`${paths.dev.img}/svg-sprite/*.svg`, { usePolling: true }, svgSprite);

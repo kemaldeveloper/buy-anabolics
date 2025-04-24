@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 42px;
+  padding-bottom: 25px;
+  @include xl {
+    padding-top: 29px;
+  }
+
+  &__nav {
+    row-gap: 10px;
+    @include xl {
+      border-top: 1px solid $black-30;
+    }
+  }
+}

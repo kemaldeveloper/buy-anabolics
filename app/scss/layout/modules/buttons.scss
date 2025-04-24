@@ -1,0 +1,3 @@
+.btn-counter {
+  @include button-variant(transparent, $gray-light, $black-50);
+}

@@ -1,0 +1,148 @@
+$deff: "Kanit", sans-serif;
+
+$black: #000;
+$black-30: rgba($black, 30%);
+$black-50: rgba($black, 50%);
+
+$white: #fff;
+$gray: #f5f5f5;
+$red: #ed1c24;
+$desc: #7d7d7d;
+$gray-light: #d1d1d1;
+$dark: #2b2b2b;
+
+$sm: 576px;
+$sm_maxw: 540px;
+
+$md: 768px;
+$md_maxw: 720px;
+
+$lg: 992px;
+$lg_maxw: 960px;
+
+$xl: 1200px;
+$xl_maxw: 1140px;
+
+$xxl: 1460px;
+$xxl_maxw: 1440px;
+
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+$container-max-widths: (
+  sm: $sm_maxw,
+  md: $md_maxw,
+  lg: $lg_maxw,
+  xl: $xl_maxw,
+  xxl: $xxl_maxw
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5,
+  6: $spacer * 1.75,
+  7: $spacer * 2,
+  8: $spacer * 2.25,
+  9: $spacer * 2.5,
+  10: $spacer * 2.75,
+  11: $spacer * 3,
+  12: $spacer * 3.25,
+  13: $spacer * 3.5,
+  14: $spacer * 3.75,
+  15: $spacer * 4
+);
+$enable-negative-margins: true;
+
+// Font-sizes
+$font-sizes: (
+  10: 10px,
+  11: 11px,
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
+  17: 17px,
+  18: 18px,
+  19: 19px,
+  20: 20px,
+  21: 21px,
+  22: 22px,
+  23: 23px,
+  24: 24px
+);
+
+$letter-spacings: (
+  1: 0.01em,
+  2: 0.02em
+);
+
+$max-widths: (
+  64: 64px,
+  77: 77px,
+  133: 133px,
+  196: 196px,
+  486: 486px,
+  561: 561px,
+  950: 950px,
+  1099: 1099px
+);
+
+// Buttons
+$btn-color: #fff;
+$btn-line-height: 18px;
+$btn-padding-y: 8px;
+$btn-padding-x: 3.8125rem;
+
+$btn-font-size-lg: 18px;
+$btn-padding-x-lg: 75.45px;
+$btn-padding-y-lg: 15px;
+$btn-border-radius-lg: 5px;
+
+// CLose btn
+$btn-close-color: null;
+$btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='currentColor'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/></svg>");
+
+// Forms
+$input-border-radius: 5px;
+$input-bg: $gray;
+$input-font-weight: 300;
+$input-padding-y-lg: 10.5px;
+$input-border-color: transparent;
+
+// Borders
+$border-radius: 5px;
+
+// Navs
+$nav-link-font-size: 18px;
+$navbar-light-color: $black;
+$navbar-nav-link-padding-x: 0;
+$navbar-brand-padding-y: 0;
+$navbar-padding-y: 0;
+$nav-link-color: $black;
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+
+// Badges
+$badge-font-size: 13px;
+$badge-font-weight: 400;
+$badge-padding-y: 2px;
+$badge-padding-x: 5px;
+
+// Modals
+$modal-md: 653px;
+$modal-content-border-width: 0;
+$modal-inner-padding: 14px;

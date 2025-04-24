@@ -52,6 +52,7 @@
     "bootstrap": "^5.3.5",
     "choices.js": "^11.1.0",
     "jquery": "^3.7.1",
-    "nouislider": "^15.8.1"
+    "nouislider": "^15.8.1",
+    "swiper": "^11.2.6"
   }
 }

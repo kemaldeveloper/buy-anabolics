@@ -1,0 +1,96 @@
+// Font face
+@mixin font_face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url("#{$file-path}.eot");
+    src:
+      url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+      url("#{$file-path}.ttf") format("truetype");
+  }
+}
+
+// Media queries
+// max-width
+
+@mixin xxl {
+  @media only screen and (max-width: calc($xxl - 1px)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (max-width: calc($xl - 1pxpx)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (max-width: calc($lg - 1px)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (max-width: calc($md - 1px)) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (max-width: calc($sm - 1px)) {
+    @content;
+  }
+}
+
+@mixin xsm {
+  @media only screen and (max-width: calc($xsm - 1px)) {
+    @content;
+  }
+}
+
+// min-width
+@mixin min_xxxl {
+  @media only screen and (min-width: $xxxl) {
+    @content;
+  }
+}
+
+@mixin min_xxl {
+  @media only screen and (min-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin min_xl {
+  @media only screen and (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin min_lg {
+  @media only screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin min_md {
+  @media only screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin min_sm {
+  @media only screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+// Media queries
+// max-height
+@mixin h800 {
+  @media only screen and (max-height: $h800) {
+    @content;
+  }
+}
