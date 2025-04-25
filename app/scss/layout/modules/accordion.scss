@@ -1,0 +1,16 @@
+.accordion {
+  .icon-link {
+    &.active {
+      color: $red;
+      .accordion-icon {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

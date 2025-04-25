@@ -155,3 +155,11 @@ $badge-padding-x: 5px;
 $modal-md: 653px;
 $modal-content-border-width: 0;
 $modal-inner-padding: 14px;
+
+$accordion-bg: $gray;
+$accordion-border-width: 0;
+$accordion-button-active-bg: $gray;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-color: $black;
+$accordion-button-icon: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iOS41IiBzdHJva2U9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMCA0Ljg1MjY2TDEwIDE1LjE0NjgiIHN0cm9rZT0iYmxhY2siLz4KPHBhdGggZD0iTTE1LjE0NyAxMEw0Ljg1MjkyIDEwIiBzdHJva2U9ImJsYWNrIi8+Cjwvc3ZnPgo=");
+$accordion-button-active-icon: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iOS41IiBzdHJva2U9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNS4xNDcgMTBMNC44NTI5MiAxMCIgc3Ryb2tlPSJibGFjayIvPgo8L3N2Zz4K");
