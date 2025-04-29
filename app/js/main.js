@@ -1,18 +1,10 @@
 import { initChoices } from "./modules/initChoices.js";
 import { initDropdowns } from "./modules/initDropdowns.js";
+import { initProductsSlider } from "./modules/initProductsSlider.js";
 import { initRange } from "./modules/initRange.js";
 import { initValidation } from "./modules/initValidation.js";
 import { productCounter } from "./modules/ProductCounter.js";
-
-const stretchRightIndenToEdge = () => {
-  const newsPromo = document.querySelector(".news-promo");
-
-  const newsPromoContainer = newsPromo.querySelector(".container");
-  const rightOffset = parseFloat(window.getComputedStyle(newsPromoContainer).marginRight);
-
-  const element = newsPromoContainer.firstElementChild;
-  element.style.marginRight = `-${rightOffset + 15}px`;
-};
+import { stretchRightIndenToEdge } from "./modules/stretchRightIndenToEdge.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   initDropdowns();
@@ -21,6 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
   initRange();
   productCounter();
   stretchRightIndenToEdge();
+  initProductsSlider();
 });
 
 window.addEventListener("resize", function () {
