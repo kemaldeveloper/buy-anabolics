@@ -1,0 +1,21 @@
+include ../layout/_mixins
+doctype html
+html(lang="en")
+  block head
+  include ../layout/_head
+  body
+    .wrapper.d-flex.flex-column
+      // Header
+      - var activePage = 'Product Categories'
+      //- include ./index/alert
+      include ../layout/_header
+
+      // Main
+      main.main.flex-grow-1.flex-shrink-1.pt-6
+        include ./catalog/promo
+        include ./catalog/products
+
+      // Footer
+      include ../layout/_footer
+
+      include ../layout/_scripts

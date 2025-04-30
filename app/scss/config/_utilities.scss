@@ -7,6 +7,12 @@ $utilities: map-merge(
       responsive: true,
       values: $max-widths
     ),
+    "max-height": (
+      property: max-height,
+      class: mh,
+      responsive: true,
+      values: $max-heights
+    ),
     "font-size": (
       rfs: true,
       responsive: true,

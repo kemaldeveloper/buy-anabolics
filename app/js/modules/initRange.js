@@ -4,9 +4,10 @@ export const initRange = () => {
   const range = document.getElementById("range");
 
   if (range) {
-    const slider = noUiSlider.create(range, {
+    noUiSlider.create(range, {
       start: [12, 120],
       connect: true,
+      margin: 15,
       tooltips: [
         {
           to: function (value) {

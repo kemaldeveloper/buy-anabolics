@@ -101,6 +101,11 @@ $max-widths: (
   1099: 1099px
 );
 
+$max-heights: (
+  426: 426px,
+  481: 481px
+);
+
 $opacities: (
   0: 0,
   25: 0.25,
@@ -141,6 +146,7 @@ $navbar-light-color: $black;
 $navbar-nav-link-padding-x: 0;
 $navbar-brand-padding-y: 0;
 $navbar-padding-y: 0;
+$navbar-light-active-color: rgba($black, 50%);
 $nav-link-color: $black;
 $nav-link-padding-y: 0;
 $nav-link-padding-x: 0;
