@@ -1,4 +1,5 @@
 .choices {
+  font-size: 18px;
   letter-spacing: 0.16px;
   color: $black-50;
 
@@ -17,7 +18,7 @@
   }
 
   &__list--single {
-    padding-right: 33.61px;
+    padding-right: 59px;
     position: relative;
     &::before {
       content: "";
@@ -32,10 +33,14 @@
       transform: translateY(-50%);
       transition: all 0.3s ease;
     }
+
+    .choices__item--selectable {
+      color: $black;
+    }
   }
 
   &__inner {
-    padding: 5px 0 5px 11px;
+    padding: 5.5px 0 5.5px 11px;
     min-height: auto;
     border-color: #d1d1d1;
     font-size: inherit;
@@ -54,12 +59,39 @@
   }
 }
 
+.choices--sm {
+  .choices {
+    font-size: 16px;
+
+    &__list--single {
+      padding-right: 67px;
+
+      .choices__item--selectable {
+        color: $black;
+      }
+    }
+
+    &__inner {
+      padding: 10.5px 0 10.5px 11px;
+    }
+
+    .choices__list--dropdown .choices__item,
+    .choices__list[aria-expanded] .choices__item {
+      padding: 11.5px 10px;
+    }
+  }
+}
+
 .choices--lg {
   .choices {
     font-size: 18px;
 
     &__list--single {
       padding-right: 67px;
+
+      .choices__item--selectable {
+        color: $black;
+      }
     }
 
     &__inner {

@@ -1,0 +1,9 @@
+.badge {
+  &-discount {
+    background-image: url("../img/badges/red-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    --bs-badge-padding-x: 8px;
+    --bs-badge-padding-y: 5px;
+  }
+}

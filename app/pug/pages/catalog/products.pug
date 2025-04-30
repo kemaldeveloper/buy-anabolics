@@ -3,3 +3,30 @@
     .col-3
       include ../components/aside
     .col-9
+      .d-flex.justify-content-end.align-items-center.column-gap-4
+        .d-inline-flex.align-items-center.column-gap-2.text-black
+          +icon('signal')
+          span.fw-light.fs-18.ls-1.lh-1 Sorting:
+        select.js-select(name="sorting")
+          option(value="USA Domestic 1") Most Popular
+          option(value="USA Domestic 2") USA Domestic 2
+          option(value="USA Domestic 3") USA Domestic 3
+      .mb-12
+        include ./products-grid
+
+      nav(aria-label="Page navigation example")
+        ul.pagination.justify-content-center.fw-light.column-gap-4
+          li.page-item.active
+            a.page-link.ls-1.rounded(href="#") 1
+          li.page-item
+            a.page-link.ls-1.rounded(href="#") 2
+          li.page-item
+            a.page-link.ls-1.rounded(href="#") 3
+          li.page-item
+            a.page-link.ls-1.rounded(href="#") 4
+          li.page-item
+            a.page-link.ls-1.rounded(href="#") 5
+          li.page-item
+            a.page-link.ls-1.rounded(href="#") ...
+          
+        

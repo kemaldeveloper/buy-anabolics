@@ -1,3 +1,5 @@
+$enable-negative-margins: true;
+
 $deff: "Kanit", sans-serif;
 
 $black: #000;
@@ -64,7 +66,6 @@ $spacers: (
   14: $spacer * 3.75,
   15: $spacer * 4
 );
-$enable-negative-margins: true;
 
 // Font-sizes
 $font-sizes: (
@@ -171,3 +172,10 @@ $accordion-button-icon: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhla
 $accordion-button-active-icon: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iOS41IiBzdHJva2U9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNS4xNDcgMTBMNC44NTI5MiAxMCIgc3Ryb2tlPSJibGFjayIvPgo8L3N2Zz4K");
 $accordion-padding-y: 20px;
 $accordion-padding-x: 22px;
+
+$pagination-color: $black-50;
+$pagination-active-color: $black;
+$pagination-active-bg: $gray;
+$pagination-active-border-color: $gray-light;
+$pagination-padding-y: 5px;
+$pagination-padding-x: 14.5px;

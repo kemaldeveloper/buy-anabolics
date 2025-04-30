@@ -11,7 +11,7 @@ export const initChoices = () => {
       renderSelectedChoices: "always",
       duplicateItemsAllowed: false,
       classNames: {
-        containerOuter: ["choices", "d-inline-flex", "fw-light", "mb-0"],
+        containerOuter: ["choices", "d-inline-flex", "fw-light", "mb-0", "ls-1"],
         containerInner: ["choices__inner", "bg-transparent", "rounded"],
         listDropdown: ["choices__list--dropdown", "border-top-0"],
         selectedState: ["d-none"],

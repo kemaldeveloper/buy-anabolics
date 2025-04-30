@@ -45,23 +45,28 @@ html(lang="en")
                 button.btn.btn-danger.btn-lg.text-white Sign In
 
             .col-12.mb-9
-              .d-flex.gap-5.align-items-start
-                span Selects:
-                
-                select.js-select(name="currency")
-                  option(value="usd") USD
-                  option(value="eur") EUR
-                  option(value="aud") AUD
+              .d-flex.gap-5.align-items-start.flex-column
+                .d-flex.align-items-center.column-gap-6
+                  span SM
+                  .choices--sm
+                    select.js-select(name="currency")
+                      option(value="usd") USD
+                      option(value="eur") EUR
+                      option(value="aud") AUD
 
-                select.js-select(name="language")
-                  option(value="eng") ENG
-                  option(value="rus") RUS
+                .d-flex.align-items-center.column-gap-6
+                  span MD (default)
+                  select.js-select(name="language")
+                    option(value="eng") ENG
+                    option(value="rus") RUS
 
-                .choices--lg
-                  select.js-select(name="")
-                    option(value="USA Domestic 1") USA Domestic 1
-                    option(value="USA Domestic 2") USA Domestic 2
-                    option(value="USA Domestic 3") USA Domestic 3
+                .d-flex.align-items-center.column-gap-6
+                  span LG
+                  .choices--lg
+                    select.js-select(name="")
+                      option(value="USA Domestic 1") USA Domestic 1
+                      option(value="USA Domestic 2") USA Domestic 2
+                      option(value="USA Domestic 3") USA Domestic 3
               
             .col-12.mb-9
               .d-flex.flex-column.gap-2
