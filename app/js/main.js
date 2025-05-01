@@ -12,12 +12,12 @@ window.addEventListener("DOMContentLoaded", function () {
   initChoices();
   initRange();
   productCounter();
-  stretchRightIndenToEdge();
+  // stretchRightIndenToEdge();
   initProductsSlider();
 });
 
 window.addEventListener("resize", function () {
-  stretchRightIndenToEdge();
+  // stretchRightIndenToEdge();
 });
 
 $(".header .navbar-toggler").on("click", function () {

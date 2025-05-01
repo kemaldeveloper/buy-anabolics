@@ -49,3 +49,24 @@ a {
     width: 0;
   }
 }
+
+.stretch-to-right {
+  margin-right: calc($grid-gutter-width / -2);
+
+  @each $breakpoint, $container-max in $container-max-widths {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+      $min-width: map-get($grid-breakpoints, $breakpoint);
+
+      @media (min-width: #{$min-width}) {
+        @include stretchToRight($container-max);
+      }
+    }
+  }
+}
+
+.opacity-75-hover {
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.75;
+  }
+}
