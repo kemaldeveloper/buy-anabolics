@@ -12,6 +12,7 @@ export const initProductsSlider = () => {
 
       new Swiper(slider, {
         modules: [Navigation],
+        lazy: true,
         slidesPerView: 3,
         spaceBetween: 31,
         navigation: {

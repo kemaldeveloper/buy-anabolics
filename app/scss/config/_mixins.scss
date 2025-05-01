@@ -21,7 +21,7 @@
 }
 
 @mixin xl {
-  @media only screen and (max-width: calc($xl - 1pxpx)) {
+  @media only screen and (max-width: calc($xl - 1px)) {
     @content;
   }
 }

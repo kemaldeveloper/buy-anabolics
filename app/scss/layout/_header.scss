@@ -1,7 +1,9 @@
 .header {
   padding-top: 24px;
+  padding-bottom: 40px;
 
   @include md {
     padding-top: 14px;
+    padding-bottom: 15px;
   }
 }

@@ -21,7 +21,7 @@
 .offcanvas-collapse {
   @include xxl {
     position: fixed;
-    top: 126px;
+    top: 166px;
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -37,8 +37,12 @@
       visibility 0.3s ease-in-out;
   }
 
+  @include xl {
+    top: 145px;
+  }
+
   @include md {
-    top: 91px;
+    top: 106px;
   }
 
   &.show {
