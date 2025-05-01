@@ -5,9 +5,46 @@
       height: 100%;
     }
   }
+
+  &-toggler-icon {
+    width: 26px;
+    height: 19px;
+  }
 }
+
 .nav {
   &-link {
     letter-spacing: 0.18px;
+  }
+}
+
+.offcanvas-collapse {
+  @include xxl {
+    position: fixed;
+    top: 126px;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 23px;
+    overflow-y: auto;
+    visibility: hidden;
+    background: $white;
+    z-index: 9999;
+    transition:
+      transform 0.3s ease-in-out,
+      visibility 0.3s ease-in-out;
+  }
+
+  @include md {
+    top: 91px;
+  }
+
+  &.show {
+    @include xxl {
+      visibility: visible;
+      transform: translateX(-100%);
+    }
   }
 }

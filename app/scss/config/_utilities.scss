@@ -14,7 +14,7 @@ $utilities: map-merge(
       values: $max-heights
     ),
     "font-size": (
-      rfs: true,
+      // rfs: true,
       responsive: true,
       property: font-size,
       class: fs,
@@ -29,6 +29,12 @@ $utilities: map-merge(
       property: opacity,
       class: opacity,
       values: $opacities
+    ),
+    "width": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: $widths
     )
   )
 );

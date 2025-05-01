@@ -16,7 +16,7 @@ export const initChoices = () => {
         listDropdown: ["choices__list--dropdown", "border-top-0"],
         selectedState: ["d-none"],
         highlightedState: ["text-danger"],
-        listSingle: ["choices__list--single", "z-2", "pt-0", "pb-0", "ps-0"],
+        listSingle: ["choices__list--single", "pt-0", "pb-0", "ps-0"],
       },
     });
   });

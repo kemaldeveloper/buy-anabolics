@@ -1,54 +1,57 @@
 header.b-header
   .container 
-    nav.navbar.navbar-expand-lg.justify-content-between.align-items-start
-      a.navbar-brand.d-block.mw-196(href="/")
-        include ../svg/logo.svg
-      button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-        span.navbar-toggler-icon
+    nav.navbar.navbar-expand-xxl.justify-content-between.align-items-start
+      a.navbar-brand.d-block.mw-lg-196.mw-148(href="/")
+        img.w-100.h-100(src="img/logo.svg", alt="logo")
 
-      .collapse.navbar-collapse.justify-content-end(id="navbarSupportedContent")
-        .d-flex.flex-column.row-gap-4
-          .d-flex.justify-content-between.column-gap-4
-            form.d-flex.flex-shrink-0.flex-grow-1(role="search")
-              input.form-control.fw-light.mw-md-486.me-5(type="search" placeholder="Search" aria-label="Search")
-              button.border-0.bg-transparent(type="submit")
-                +icon('glass')
-            
-            .d-flex.column-gap-8
-              select.js-select(name="currency")
-                option(value="usd") USD
-                option(value="eur") EUR
-                option(value="aud") AUD
 
-              select.js-select(name="language")
-                option(value="eng") ENG
-                option(value="rus") RUS
+      .navbar-collapse.offcanvas-collapse(tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel")
+        .d-xxl-flex.justify-content-xxl-end.container-sm
+          .d-flex.flex-column.row-gap-4
+            .d-flex.justify-content-between.column-gap-4.align-items-start.flex-md-row.flex-column.row-gap-4
+              form.d-flex.flex-shrink-0.flex-grow-1.w-md-auto.w-100(role="search")
+                input.form-control.fw-light.mw-md-486.me-5(type="search" placeholder="Search" aria-label="Search")
+                button.border-0.bg-transparent(type="submit")
+                  +icon('glass')
+              
+              .d-flex.flex-md-row.flex-column.column-gap-8.row-gap-4.align-self-end
+                .choices--sm
+                  select.js-select(name="currency")
+                    option(value="usd") USD
+                    option(value="eur") EUR
+                    option(value="aud") AUD
+                .choices--sm
+                  select.js-select(name="language")
+                    option(value="eng") ENG
+                    option(value="rus") RUS
 
-          ul.navbar-nav.me-auto.mb-2.mb-lg-0.gap-8
-            li.nav-item
-              a.nav-link(class=(activePage === 'Product Categories' ? 'active' : '') href="catalog.html") Product Categories
-            li.nav-item
-              a.nav-link(href="#") Manufacturers
-            li.nav-item
-              a.nav-link(href="#") Warehouses
-            li.nav-item
-              a.nav-link(href="#") News
-            li.nav-item
-              a.nav-link(href="#") About Us
-            li.nav-item
-              a.nav-link(href="#") FAQ
-            li.nav-item
-              a.nav-link(href="#") Terms
-            li.nav-item
-              a.nav-link(href="#") Contacts
+            ul.navbar-nav.mb-2.mb-xxl-0.column-gap-8.row-gap-4
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(class=(activePage === 'Product Categories' ? 'active' : '') href="catalog.html") Product Categories
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") Manufacturers
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") Warehouses
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") News
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") About Us
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") FAQ
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") Terms
+              li.nav-item
+                a.nav-link.fs-xxl-18.fs-22(href="#") Contacts
 
-        .vr.bg-gray-light.mx-11
+      .vr.bg-gray-light.mx-11.d-xxl-inline-block.d-none
 
-        .d-flex.flex-column.pe-2.pt-1.row-gap-6
-          a.link-black.fw-light.fs-18.text-decoration-none(href="#") Sign Up
-          .d-flex.column-gap-8
-            a.d-block.text-black(href="#")
-              +icon('user')
-            a.d-block.text-black.position-relative(href="#")
-              +icon('basket')
-              span.badge.position-absolute.top-0.start-100.translate-middle.bg-danger.rounded-circle.text-white.mt-1 2
+      .d-flex.flex-column.pe-2.pt-md-1.row-gap-lg-6.row-gap-md-4.row-gap-5
+        a.link-black.link-opacity-75-hover.fw-light.fs-md-18.fs-15.ls-1.text-decoration-none.align-self-xxl-start.align-self-end(href="#") Sign Up
+        .d-flex.column-gap-md-8.column-gap-6
+          a.d-block.text-black(href="#")
+            +icon('user')
+          a.d-block.text-black.position-relative(href="#")
+            +icon('basket')
+            span.badge.position-absolute.top-0.start-100.translate-middle.bg-danger.rounded-circle.text-white.mt-1 2
+          button.navbar-toggler.p-0.border-0(type="button" id="navbarSideCollapse" aria-label="Toggle navigation")
+            span.navbar-toggler-icon

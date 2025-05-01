@@ -19,3 +19,8 @@ window.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("resize", function () {
   stretchRightIndenToEdge();
 });
+
+$(".header .navbar-toggler").on("click", function () {
+  $(".offcanvas-collapse").toggleClass("show");
+  $("body").toggleClass("overflow-hidden");
+});
