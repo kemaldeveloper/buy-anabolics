@@ -1,3 +1,5 @@
 .bg-black.mb-10
   a.opacity-75-hover.d-block(href="#")
-    img.w-100.h-100.object-fit-cover(src="img/banners/catalog-banner-2x.jpg" alt="sale")
+    picture.d-block
+      source(srcset="img/banners/banner-sale-mobile.jpg" media="(max-width: 1200px)")
+      img.w-100.h-100.object-fit-cover(src="img/banners/catalog-banner-2x.jpg" alt="sale")
