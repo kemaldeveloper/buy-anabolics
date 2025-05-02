@@ -35,6 +35,12 @@ $utilities: map-merge(
       class: w,
       responsive: true,
       values: $widths
+    ),
+    "grid-template-columns": (
+      property: grid-template-columns,
+      class: grid-columns,
+      responsive: true,
+      values: $css-grid-columns
     )
   )
 );

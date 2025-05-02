@@ -1,9 +1,9 @@
 .container
   .row
-    .col-3
+    .col-xxl-3.col-xl-4.col-12
       include ../components/aside
-    .col-9
-      .d-flex.justify-content-end.align-items-center.column-gap-4
+    .col-xxl-9.col-xl-8.col-12
+      .d-flex.justify-content-end.align-items-center.column-gap-4.mb-xl-0.mb-6
         .d-inline-flex.align-items-center.column-gap-2.text-black
           +icon('signal')
           span.fw-light.fs-18.ls-1.lh-1 Sorting:
@@ -11,7 +11,7 @@
           option(value="USA Domestic 1") Most Popular
           option(value="USA Domestic 2") USA Domestic 2
           option(value="USA Domestic 3") USA Domestic 3
-      .mb-12
+      .mb-md-12.mb-6
         include ./products-grid
 
       nav(aria-label="Page navigation example")
@@ -28,5 +28,3 @@
             a.page-link.ls-1.rounded(href="#") 5
           li.page-item
             a.page-link.ls-1.rounded(href="#") ...
-          
-        
