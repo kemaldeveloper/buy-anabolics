@@ -1,3 +1,11 @@
-.btn-counter {
-  @include button-variant(transparent, $gray-light, $black-50);
+.btn {
+  &-md {
+    @include md {
+      padding: 8px 38px;
+    }
+  }
+
+  &-counter {
+    @include button-variant(transparent, $gray-light, $black-50);
+  }
 }

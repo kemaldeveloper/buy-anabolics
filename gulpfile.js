@@ -161,7 +161,7 @@ const html = () => {
     .pipe(
       prettyHtml({
         indent_size: 2,
-        indent_with_tabs: true,
+        indent_with_tabs: false,
         unformatted: ["code", "pre", "em", "strong", "span", "i", "b", "br"],
         extra_liners: [],
         indent_char: [" "],

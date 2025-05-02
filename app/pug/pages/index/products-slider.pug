@@ -1,357 +1,70 @@
-.d-flex.flex-column.row-gap-15
+.d-flex.flex-column.row-gap-md-11.row-gap-8.pt-4
+  //
   .products-swiper
-    .d-flex.align-items-center.justify-content-between.mb-6
+    .d-flex.align-items-center.justify-content-between.mb-7
       h2.text-danger.fw-normal Featured products
-      .d-flex.align-items-center.column-gap-2
+      .d-md-flex.align-items-md-center.column-gap-md-2.d-none
         .swiper-button-prev.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-end.position-static.mt-0
           +icon('slider-prev')
         .swiper-button-next.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-start.position-static.mt-0
           +icon('slider-next')
     .swiper
       .swiper-wrapper
-        //
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-win.jpg", alt="Ultima Win" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-t3.jpg", alt="Ultima T3" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-t3.jpg', 'Ultima-T3', '$40.00', 'Liothyronine Sodium', '50 pills x 25 mcg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-anastro.jpg", alt="Ultima Anastro" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-win.jpg", alt="Ultima Win" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-t3.jpg", alt="Ultima T3" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-t3.jpg', 'Ultima-T3', '$40.00', 'Liothyronine Sodium', '50 pills x 25 mcg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-anastro.jpg", alt="Ultima Anastro" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
+          +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg')
   //
   .products-swiper
-    .d-flex.align-items-center.justify-content-between
+    .d-flex.align-items-center.justify-content-between.mb-7
       h2.text-danger.fw-normal Tending products
-      .d-flex.align-items-center.column-gap-2
+      .d-md-flex.align-items-md-center.column-gap-md-2.d-none
         .swiper-button-prev.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-end.position-static.mt-0
           +icon('slider-prev')
         .swiper-button-next.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-start.position-static.mt-0
           +icon('slider-next')
     .swiper
       .swiper-wrapper
-        //
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-win.jpg", alt="Ultima Win" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-t3.jpg', 'Ultima-T3', '$40.00', 'Liothyronine Sodium', '50 pills x 25 mcg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-t3.jpg", alt="Ultima T3" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-anastro.jpg", alt="Ultima Anastro" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-win.jpg", alt="Ultima Win" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-t3.jpg', 'Ultima-T3', '$40.00', 'Liothyronine Sodium', '50 pills x 25 mcg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-t3.jpg", alt="Ultima T3" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg')
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-anastro.jpg", alt="Ultima Anastro" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
+          +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml')
   //
   .products-swiper
-    .d-flex.align-items-center.justify-content-between
+    .d-flex.align-items-center.justify-content-between.mb-7
       h2.text-danger.fw-normal Discount products
-      .d-flex.align-items-center.column-gap-2
+      .d-md-flex.align-items-md-center.column-gap-md-2.d-none
         .swiper-button-prev.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-end.position-static.mt-0
           +icon('slider-prev')
         .swiper-button-next.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-start.position-static.mt-0
           +icon('slider-next')
     .swiper
       .swiper-wrapper
-        //
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-win.jpg", alt="Ultima Win" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml', true)
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-t3.jpg", alt="Ultima T3" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-t3.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml', true)
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-anastro.jpg", alt="Ultima Anastro" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg', true)
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-win.jpg", alt="Ultima Win" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml', true)
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-t3.jpg", alt="Ultima T3" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
-        //
+          +product('img/products/ultima-t3.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml', true)
         .swiper-slide
-          .card.border-0.rounded-0
-            img.card-img-top(src="img/products/ultima-anastro.jpg", alt="Ultima Anastro" loading="lazy")
-            .swiper-lazy-preloader
-            .card-body.p-0
-              .d-flex.justify-content-between.align-items-center.mb-2
-                h5.fw-medium.fs-20 Ultima-Win
-                span.fw-medium.fs-20 $40.00
-              dl.fs-15.mb-3
-                dt.fw-normal Stanozolol Suspension
-                dd 10 ml x 50 mg/ml
-              .d-flex.justify-content-between
-                .input-group.product-counter.mw-77
-                  button.btn.btn-counter.border-end-0.p-2.minus -
-                  input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
-                  button.btn.btn-counter.border-start-0.p-2.plus +
-                button.btn.btn-danger.text-white Add to Cart
+          +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg', true)

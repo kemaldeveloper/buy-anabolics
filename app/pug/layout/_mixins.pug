@@ -2,27 +2,30 @@ mixin icon(name)
   svg(class='icon icon--' + name, fill='currentColor')
     use(href='img/svg-sprite.svg#' + name)
 
-mixin product(img, name, price, category, grammage)
+mixin product(img, name, price, category, grammage, isDiscount = false)
   .card.border-0.rounded-0
-    .position-relative
+    a.position-relative.opacity-75-hover(href="#")
       img.card-img-top(src=img, alt=name)
-      .position-absolute.end-0.bottom-0.d-flex.align-items-center.column-gap-2.pe-3
-        span.text-danger.fw-light
-          s $48.00
-        span.badge.badge-discount.fw-medium.fs-16 -20%
-    .card-body.ps-0.pt-2.pe-5
+      if isDiscount
+        .position-absolute.end-0.bottom-0.d-flex.align-items-center.column-gap-2.pe-3
+          span.text-danger.fw-light
+            s $48.00
+          span.badge.badge-discount.fw-medium.fs-16 -20%
+    .card-body.ps-0.pt-md-2.pt-0.pe-md-6.pe-0
       .d-flex.justify-content-between.align-items-center.column-gap-5
-        h5.fw-medium.fs-20.text-truncate=name
-        span.fw-medium.fs-20=price
-      dl.fs-15.mb-4
-        dt.fw-normal=category
+        a.link-black.link-opacity-75-hover.fw-medium.fs-20.text-truncate.text-decoration-none(href="#")=name
+        span.fw-medium.fs-20.d-md-block.d-none=price
+      dl.fs-15.mb-md-5.mb-4
+        dt.d-flex.flex-wrap.gap-1
+          a.link-black.link-opacity-75-hover.fw-normal.text-decoration-none(href="#")=category
         dd.text-description=grammage
-      .d-flex.justify-content-between
-        .input-group.product-counter.mw-77
+      span.fw-medium.d-md-none.d-block.fs-20.lh-1.mb-5=price
+      .d-flex.justify-content-between.flex-xl-row.flex-column.row-gap-4
+        .input-group.product-counter.mw-xl-77
           button.btn.btn-counter.border-end-0.p-2.minus -
           input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1")
           button.btn.btn-counter.border-start-0.p-2.plus +
-        button.btn.btn-danger.text-white Add to Cart
+        button.btn.btn-danger.btn-md.text-white Add to Cart
 
 mixin newsCard(emoji, date, title, description)
   a.card.fw-light.flex-shrink-0.text-decoration-none.opacity-75-hover(href="#")
@@ -36,3 +39,18 @@ mixin newsCard(emoji, date, title, description)
           dl
             dt.fs-md-22.fs-18.fw-semibold.ls-1.lh-1.mb-3=title
             dd.text-black.opacity-70.fs-md-20.fs-16.ls-1.lh-1=description
+
+mixin filterAccordion(name, id, isOpened, ...links)
+  .accordion(id=id)
+    .accordion-item
+      h5.accordion-header
+        button.accordion-button.fs-md-22.fs-20.ls-1.rounded(class=isOpened ? '' : 'collapsed' type="button" data-bs-toggle="collapse" data-bs-target=`#collapse${id}` aria-expanded=isOpened aria-controls=`collapse${id}`)= name
+      .accordion-collapse.collapse(class=isOpened ? 'show' : '' id=`collapse${id}` data-bs-parent=`#${id}`)
+        .accordion-body.pt-0
+          .border-top
+            nav.accordion-nav.nav.flex-column.fw-light.fs-18.mt-4.row-gap-3.overflow-y-auto.flex-nowrap.mh-md-426.mh-170
+              each link, index in links
+                a.icon-link.lh-1.icon-link-hover.text-decoration-none(class=index === 0 ? 'active' : '' href="#")
+                  .accordion-icon.d-inline-flex
+                    +icon('link-arrow')
+                  = link

@@ -12,12 +12,25 @@ export const initProductsSlider = () => {
 
       new Swiper(slider, {
         modules: [Navigation],
-        lazy: true,
-        slidesPerView: 3,
-        spaceBetween: 31,
         navigation: {
           prevEl: prevEl,
           nextEl: nextEl,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 31,
+          },
+          1200: {
+            slidesPerView: 2,
+          },
+          1460: {
+            slidesPerView: 3,
+          },
         },
       });
     });
