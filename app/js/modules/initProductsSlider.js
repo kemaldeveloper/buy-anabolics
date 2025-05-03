@@ -9,9 +9,12 @@ export const initProductsSlider = () => {
       const slider = sliderContainer.querySelector(".swiper");
       const prevEl = sliderContainer.querySelector(".swiper-button-prev");
       const nextEl = sliderContainer.querySelector(".swiper-button-next");
+      const defaultViewCount = slider.getAttribute("data-view");
+      console.log(defaultViewCount);
 
       new Swiper(slider, {
         modules: [Navigation],
+        spaceBetween: 31,
         navigation: {
           prevEl: prevEl,
           nextEl: nextEl,
@@ -26,10 +29,10 @@ export const initProductsSlider = () => {
             spaceBetween: 31,
           },
           1200: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
           1460: {
-            slidesPerView: 3,
+            slidesPerView: defaultViewCount ? defaultViewCount : 3,
           },
         },
       });

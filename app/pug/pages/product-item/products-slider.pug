@@ -1,0 +1,24 @@
+section.pt-8
+  .container
+    .products-swiper
+      .d-flex.align-items-center.justify-content-between.mb-7
+        h2.text-danger.fw-normal You might also like:
+        .d-md-flex.align-items-md-center.column-gap-md-2.d-none
+          .swiper-button-prev.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-end.position-static.mt-0
+            +icon('slider-prev')
+          .swiper-button-next.border.border-black.rounded-circle.clearfix.d-inline-flex.text-black.justify-content-start.position-static.mt-0
+            +icon('slider-next')
+      .swiper(data-view="4")
+        .swiper-wrapper
+          .swiper-slide
+            +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml')
+          .swiper-slide
+            +product('img/products/ultima-t3.jpg', 'Ultima-T3', '$40.00', 'Liothyronine Sodium', '50 pills x 25 mcg')
+          .swiper-slide
+            +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg')
+          .swiper-slide
+            +product('img/products/ultima-win.jpg', 'Ultima-Win', '$40.00', 'Stanozolol Suspension', '10 ml x 50 mg/ml')
+          .swiper-slide
+            +product('img/products/ultima-t3.jpg', 'Ultima-T3', '$40.00', 'Liothyronine Sodium', '50 pills x 25 mcg')
+          .swiper-slide
+            +product('img/products/ultima-anastro.jpg', 'Ultima-Anastro (Arimidex)', '$40.00', 'Anastrozole', '30 pills x 1 mg')
