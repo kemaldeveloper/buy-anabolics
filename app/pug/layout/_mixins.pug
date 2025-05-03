@@ -4,7 +4,7 @@ mixin icon(name)
 
 mixin product(img, name, price, category, grammage, isDiscount = false)
   .card.border-0.rounded-0
-    a.position-relative.opacity-75-hover(href="#")
+    a.position-relative.opacity-75-hover(href="product-item.html")
       img.card-img-top(src=img, alt=name)
       if isDiscount
         .position-absolute.end-0.bottom-0.d-flex.align-items-center.column-gap-2.pe-3
@@ -13,7 +13,7 @@ mixin product(img, name, price, category, grammage, isDiscount = false)
           span.badge.badge-discount.fw-medium.fs-16 -20%
     .card-body.ps-0.pt-md-2.pt-0.pe-md-6.pe-0
       .d-flex.justify-content-between.align-items-center.column-gap-5
-        a.link-black.link-opacity-75-hover.fw-medium.fs-20.text-truncate.text-decoration-none(href="#")=name
+        a.link-black.link-opacity-75-hover.fw-medium.fs-20.text-truncate.text-decoration-none(href="product-item.html")=name
         span.fw-medium.fs-20.d-md-block.d-none=price
       dl.fs-15.mb-md-5.mb-4
         dt.d-flex.flex-wrap.gap-1
@@ -54,3 +54,12 @@ mixin filterAccordion(name, id, isOpened, ...links)
                   .accordion-icon.d-inline-flex
                     +icon('link-arrow')
                   = link
+
+mixin productCounter(name)
+  .input-group.product-counter.h-100
+    button.btn.btn-counter.border-end-0.p-2.minus(type="button") -
+    input.form-control.bg-transparent.border-gray-light.border-end-0.border-start-0.px-0.text-center(type="number" value="1" min="1" name=name)
+    button.btn.btn-counter.border-start-0.p-2.plus(type="button") +
+
+mixin btn(size, text, type = 'button')
+  button.btn.btn-danger.text-white(class=`btn-${size}` type=type)= text

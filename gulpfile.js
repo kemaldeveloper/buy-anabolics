@@ -43,6 +43,7 @@ const paths = {
     scss: "app/scss",
     css: "app/css",
     js: "app/js",
+    fonts: "app/fonts",
     pug: "app/pug",
     img: "app/img",
   },
@@ -119,7 +120,8 @@ const purgeCss = () => {
       purgecss({
         content: [`${paths.dev.root}/**/*.html`, `${paths.dev.js}/**/*.js`, `${paths.dev.pug}/**/*.pug`],
         safelist: {
-          standard: [/^is-/, /^has-/, /^show$/, /^collapse/, /^modal/],
+          standard: [/^is-/, /^has-/, /^show$/, /^collapse/, /^modal/, /^choices/],
+          deep: [/choices/, /select-one/, /data-type/],
         },
       })
     )
@@ -218,7 +220,9 @@ const buildCopy = () => {
   return src(
     [
       `${paths.dev.css}/main.min.css`,
+      `${paths.dev.css}/libs.min.css`,
       `${paths.dev.js}/*.{js,json}`,
+      `${paths.dev.fonts}/**/*`,
       `!${paths.dev.js}/main.js`,
       `${paths.dev.js}/main.bundle.js`,
       `${paths.dev.img}/**/*`,

@@ -1,4 +1,5 @@
 $enable-negative-margins: true;
+$enable-rfs: true;
 
 $deff: "Kanit", sans-serif;
 
@@ -84,7 +85,8 @@ $font-sizes: (
   21: 21px,
   22: 22px,
   23: 23px,
-  24: 24px
+  24: 24px,
+  30: 30px
 );
 
 $letter-spacings: (
@@ -95,6 +97,7 @@ $letter-spacings: (
 $max-widths: (
   64: 64px,
   77: 77px,
+  90: 90px,
   133: 133px,
   148: 148px,
   196: 196px,
