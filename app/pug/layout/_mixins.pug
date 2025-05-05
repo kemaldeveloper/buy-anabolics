@@ -69,9 +69,9 @@ mixin newsPost(date, description, imgPath)
     .col-5
       .d-flex.flex-column
         time.d-inline-block.fs-14.fw-light.lh-1.ls-1.mb-3= date
-        a.link-black.link-opacity-75-hover.text-decoration-none(href="#")
+        a.link-black.link-opacity-75-hover.text-decoration-none(href="news-item.html")
           p.fw-semibold.fs-40.ls-1= description
     .col-7
       .ps-16.ms-1
-        a.d-block.opacity-75-hover(href="#")
+        a.d-block.opacity-75-hover(href="news-item.html")
           img.img-fluid(src=imgPath alt=description)
