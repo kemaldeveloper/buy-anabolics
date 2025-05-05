@@ -1,0 +1,19 @@
+include ../layout/_mixins
+doctype html
+html(lang="en")
+  block head
+  include ../layout/_head
+  body
+    .wrapper.d-flex.flex-column
+      // Header
+      - var activePage = 'Main'
+      //- include ./index/alert
+      include ../layout/_header
+
+      // Main
+      main.main.flex-grow-1.flex-shrink-1.mb-md-11.mb-10
+
+      // Footer
+      include ../layout/_footer
+
+      include ../layout/_scripts

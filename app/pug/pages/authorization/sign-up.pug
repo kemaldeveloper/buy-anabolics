@@ -1,0 +1,27 @@
+section.mt-1
+  .container
+    .row
+      .col-12.mb-9
+        .position-relative.mb-10
+          h2.text-danger.z-1.position-relative.bg-white.mx-auto.px-11(style="width: fit-content") Sign Up
+          hr.w-100.position-absolute.m-0.top-50.translate-middle-y.border-gray-light.opacity-100
+      .col-4.offset-4
+        form.row.needs-validation(action="#" method="GET" novalidate)
+          .mb-6
+            input.form-control.form-control-lg.fs-18.border-transparent(type="text" name="name" placeholder="Name" required)
+            .invalid-feedback.fw-light Please fill this field
+          .mb-6
+            input.form-control.form-control-lg.fs-18.border-transparent(type="email" name="email" placeholder="Email" required)
+            .invalid-feedback.fw-light Please fill this field
+          .mb-6
+            input.form-control.form-control-lg.fs-18.border-transparent(type="password" name="email" placeholder="Password" required)
+            .invalid-feedback.fw-light Please fill this field
+          .mb-8
+            input.form-control.form-control-lg.fs-18.border-transparent(type="password" name="email" placeholder="Confirm Password" required)
+            .invalid-feedback.fw-light Please fill this field
+          .col-12.mb-6
+            button.btn.btn-danger.btn-lg.text-white.w-100(type="submit") Sign Up
+          .col-12
+            .fw-light.fs-16.text-center
+              span Already have an account? 
+              a.link-danger.text-decoration-none(href="sign-in.html") Sign In
