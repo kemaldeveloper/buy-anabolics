@@ -25,7 +25,7 @@ header.b-header
 
             ul.navbar-nav.mb-2.mb-xxl-0.column-gap-9.row-gap-5
               li.nav-item
-                a.nav-link.fs-xxl-18.fs-22(class=(activePage === 'Product Categories' ? 'active' : '') href="catalog.html") Product Categories
+                a.nav-link.fs-xxl-18.fs-22(class=(activePage === 'Catalog' ? 'active' : '') href="catalog.html") Product Categories
               li.nav-item
                 a.nav-link.fs-xxl-18.fs-22(href="#") Manufacturers
               li.nav-item
@@ -44,9 +44,9 @@ header.b-header
       .vr.bg-gray-light.mx-12.d-xxl-inline-block.d-none
 
       .d-flex.flex-column.pe-3.pt-md-3.row-gap-lg-7.row-gap-md-5.row-gap-6
-        a.link-black.link-opacity-75-hover.fw-light.fs-md-18.fs-15.ls-1.text-decoration-none.align-self-xxl-start.align-self-end(class="" href="sign-up.html") Sign Up
+        a.link-opacity-75-hover.fw-light.fs-md-18.fs-15.ls-1.text-decoration-none.align-self-xxl-start.align-self-end(class=(activePage === 'Sign Up' ? 'link-danger' : 'link-black') href="sign-up.html") Sign Up
         .d-flex.column-gap-md-8.column-gap-6
-          a.d-block.text-black(href="#")
+          a.d-block(class=(activePage === 'Sign In' ? 'text-danger' : 'text-black') href="sign-in.html")
             +icon('user')
           a.d-block.text-black.position-relative(href="#")
             +icon('basket')

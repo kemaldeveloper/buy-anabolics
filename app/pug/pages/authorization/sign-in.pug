@@ -1,0 +1,30 @@
+section.mt-1
+  .container
+    .row
+      .col-12.mb-9
+        .position-relative.mb-10
+          h2.text-danger.z-1.position-relative.bg-white.mx-auto.px-11(style="width: fit-content") Sign In
+          hr.w-100.position-absolute.m-0.top-50.translate-middle-y.border-gray-light.opacity-100
+      .col-8.offset-2
+        .d-flex.ms-n8
+          .mw-450.flex-grow-1
+            form.needs-validation(action="#" method="GET" novalidate)
+              .mb-7
+                input.form-control.form-control-lg.fs-18.border-transparent(type="text" name="name" placeholder="Name" required)
+                .invalid-feedback.fw-light Please fill this field
+              .mb-5
+                input.form-control.form-control-lg.fs-18.border-transparent(type="email" name="email" placeholder="Email" required)
+                .invalid-feedback.fw-light Please fill this field
+              .col.d-flex.align-items-center.justify-content-between.mb-5
+                .form-check.ps-7
+                  input.form-check-input(type="checkbox" name="remember-me" id="rememberMe")
+                  label.form-check-label.fw-light(for="rememberMe") Remember me
+                a.link-danger.text-decoration-none(href="#") Forgot Password?
+              .col
+                button.btn.btn-danger.btn-lg.text-white.w-100(type="submit") Sign In
+          .vr.flex-shrink-0.ms-12.me-11
+          .mw-387
+            h3.text-danger.mb-5 New Customer
+            .fw-light.fs-18.ls-1.mb-10
+              p By creating an account with our store, you will be able to move through the checkout process, store multiple shipping addresses, view and track your orders in your account and more.
+            a.btn.btn-danger.btn-lg.text-white(href="#") Sign Up
