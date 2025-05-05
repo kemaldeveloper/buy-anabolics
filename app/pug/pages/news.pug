@@ -1,0 +1,47 @@
+include ../layout/_mixins
+doctype html
+html(lang="en")
+  block head
+  include ../layout/_head
+  body
+    //- .container.position-absolute.top-0.start-50.translate-middle-x.vh-100
+    //-   .row.vh-100
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    //-     .col-1
+    //-       .bg-danger.opacity-25.h-100 
+    .wrapper.d-flex.flex-column
+      // Header
+      - var activePage = 'News'
+      //- include ./index/alert
+      include ../layout/_header
+
+      // Main
+      main.main.flex-grow-1.flex-shrink-1.mb-md-11.mb-10
+        include ./news/news
+
+
+      // Footer
+      include ../layout/_footer
+
+      include ../layout/_scripts

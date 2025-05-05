@@ -5,6 +5,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  font-weight: 400;
 
   @include md {
     font-size: 24px;

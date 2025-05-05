@@ -2,7 +2,7 @@ header.b-header
   .container 
     nav.navbar.navbar-expand-xxl.justify-content-between.align-items-start
       a.navbar-brand.d-block.mw-lg-196.mw-148(href="/")
-        img.w-100.h-100(src="img/logo.svg", alt="logo")
+        img.w-100.h-100(src="img/logo.svg" alt="logo")
       .navbar-collapse.offcanvas-collapse.justify-content-end.pt-2.px-0(tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel")
         .d-xxl-flex.justify-content-xxl-end.container-sm.px-xxl-0
           .d-flex.flex-column.row-gap-7
@@ -11,7 +11,7 @@ header.b-header
                 input.form-control.fw-light.mw-md-486.me-6(type="search" placeholder="Search" aria-label="Search")
                 button.border-0.bg-transparent(type="submit")
                   +icon('glass')
-              
+
               .d-flex.flex-md-row.flex-column.column-gap-8.row-gap-5.align-self-end
                 .choices--sm
                   select.js-select(name="currency")
@@ -31,7 +31,7 @@ header.b-header
               li.nav-item
                 a.nav-link.fs-xxl-18.fs-22(href="#") Warehouses
               li.nav-item
-                a.nav-link.fs-xxl-18.fs-22(href="#") News
+                a.nav-link.fs-xxl-18.fs-22(class=(activePage === 'News' ? 'active' : '') href="news.html") News
               li.nav-item
                 a.nav-link.fs-xxl-18.fs-22(href="#") About Us
               li.nav-item
