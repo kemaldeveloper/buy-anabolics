@@ -75,3 +75,8 @@ mixin newsPost(date, description, imgPath)
       .ps-16.ms-1
         a.d-block.opacity-75-hover(href="news-item.html")
           img.img-fluid(src=imgPath alt=description)
+
+mixin linedTitle(title)
+  .position-relative
+    h2.text-danger.z-1.position-relative.bg-white.mx-auto.px-11(style="width: fit-content")= title
+    hr.w-100.position-absolute.m-0.top-50.translate-middle-y.border-gray-light.opacity-100
