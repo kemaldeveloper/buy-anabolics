@@ -47,7 +47,6 @@
 @import "../../node_modules/bootstrap/scss/helpers/icon-link";
 @import "../../node_modules/bootstrap/scss/helpers/text-truncation";
 @import "../../node_modules/bootstrap/scss/helpers/position";
-@import "../../node_modules/bootstrap/scss/helpers/clearfix";
 
 // Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
@@ -55,6 +54,8 @@
 // Swiper
 @import "../../node_modules/swiper/swiper";
 @import "../../node_modules/swiper/modules/navigation";
+
+@import "../../node_modules/bootstrap/scss/helpers/clearfix";
 
 // // Layout
 @import "./layout/_all";
