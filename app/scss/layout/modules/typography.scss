@@ -1,6 +1,10 @@
 h1 {
   font-size: 36px;
   line-height: 40px;
+
+  @include md {
+    font-size: 30px;
+  }
 }
 
 h2 {

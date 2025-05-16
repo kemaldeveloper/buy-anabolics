@@ -12,7 +12,7 @@ export const initChoices = () => {
       duplicateItemsAllowed: false,
       classNames: {
         containerOuter: ["choices", "d-inline-flex", "fw-light", "mb-0", "ls-1"],
-        containerInner: ["choices__inner", "bg-transparent", "rounded"],
+        containerInner: ["choices__inner", "bg-transparent", "rounded", "lh-1"],
         listDropdown: ["choices__list--dropdown", "border-top-0"],
         selectedState: ["d-none"],
         highlightedState: ["text-danger"],

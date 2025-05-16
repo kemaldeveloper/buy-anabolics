@@ -4,7 +4,7 @@ mixin icon(name)
 
 mixin product(img, name, price, category, grammage, isDiscount = false)
   .card.border-0.rounded-0
-    a.position-relative.opacity-75-hover(href="product-item.html")
+    a.position-relative.opacity-75-hover.mb-md-0.mb-1(href="product-item.html")
       img.card-img-top(src=img, alt=name)
       if isDiscount
         .position-absolute.end-0.bottom-0.d-flex.align-items-center.column-gap-2.pe-3

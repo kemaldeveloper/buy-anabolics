@@ -21,7 +21,6 @@ h4,
 h5,
 h6,
 p,
-ul,
 dl,
 dd {
   margin: 0;
@@ -68,5 +67,11 @@ a {
   transition: opacity 0.2s ease-in-out;
   &:hover {
     opacity: 0.75;
+  }
+}
+
+.container {
+  @include sm {
+    padding: 0 20px !important;
   }
 }

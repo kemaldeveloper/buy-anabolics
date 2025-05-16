@@ -37,6 +37,10 @@
     color: $danger;
     width: 36px;
     height: 6px;
+
+    @include md {
+      width: 29px;
+    }
   }
 
   &--dashboard {

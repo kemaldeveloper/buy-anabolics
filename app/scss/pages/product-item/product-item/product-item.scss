@@ -1,0 +1,9 @@
+.product-item {
+  &__text {
+    line-height: 32px;
+
+    @include md {
+      line-height: 28px;
+    }
+  }
+}

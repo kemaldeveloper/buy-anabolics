@@ -1,58 +1,62 @@
-section.pt-6.pb-9
+section.b-product-item.pt-md-6.pt-2.pb-md-9.pb-6
   .container 
     .row
-      .col-5
+      .col-xl-5.col-12.mb-xl-0.mb-4
         nav.mb-2(aria-label="breadcrumb")
-          ol.breadcrumb.mb-0
+          ol.fs-md-16.fs-14.ls-1.breadcrumb.mb-0
             li.breadcrumb-item
-              a.d-flex.align-items-center.column-gap-5.text-decoration-none(href="#")
+              a.d-flex.align-items-center.column-gap-md-5.column-gap-4.text-decoration-none(href="#")
                 +icon('arrow-left')
                 span.text-black.opacity-50 Back to Products Categories
-        img.img-fluid(src="img/products/ultima-win-big.jpg" alt="Ultima Win")
-      .col-7
+        img.img-fluid.d-xl-block.d-none(src="img/products/ultima-win-big.jpg" alt="Ultima Win")
+      .col-xl-7.col-12
         .d-flex.flex-column
-          .px-16
-            .d-flex.column-gap-7.mb-11
-              .d-flex.flex-column
-                h1.text-danger.mb-9 Ultima-Win
-                span.fw-light.mb-3 Warehouse
-                form.d-flex.column-gap-8(action="#")
-                  .choices--lg
-                    select.js-select(name="")
+          .ps-xl-16.pe-xl-6.mb-md-7.mb-5
+            .d-flex.flex-column.column-gap-7.mb-md-11.mb-4
+              .d-flex.jusfify-content-xl-start.justify-content-between
+                .d-flex.flex-column.w-xl-50.pe-5
+                  h1.text-danger.mb-md-9.mb-4 Ultima-Win
+                  span.fw-light.mb-3 Warehouse
+                .w-xl-50
+                  span.fw-medium.fs-md-30.fs-24 $44.00
+
+              form.d-flex.flex-xxl-row.flex-column.row-gap-md-5.row-gap-4(action="#")
+                .d-xl-flex.column-gap-xl-8.column-gap-6.w-xxl-50.pe-xl-5.d-grid.grid-columns-2
+                  .choices--lg.d-grid
+                    select.js-select.w-100(name="")
                       option(value="USA Domestic 1") USA Domestic 1
                       option(value="USA Domestic 2") USA Domestic 2
                       option(value="USA Domestic 3") USA Domestic 3
-                  .mw-90
+                  .mw-xl-90
                     +productCounter('ultimaWinQuantity')
-              .d-flex.flex-column.justify-content-between.flex-grow-1
-                span.fw-medium.fs-30 $44.00
-                button.btn.btn-danger.btn-lg.text-white.fs-24(type="submit") Add to cart
+                .d-flex.w-xxl-50.pe-xl-10
+                  button.btn.btn-danger.btn-lg.text-white.fs-md-24.flex-grow-1(type="submit") Add to Cart
+            .d-xl-none.mb-4
+              img.img-fluid(src="img/products/ultima-win-big.jpg" alt="Ultima Win")
             div
               table
-                tbody
+                tbody.align-top
                   tr
-                    td.pe-5.pb-3
+                    td.pe-md-5.pe-3.pb-3
                       strong.fw-medium Manufacturer:
-                    td.ps-5.pb-3
+                    td.ps-md-5.ps-4.pb-3
                       span.fw-light Ultima Pharmaceuticals
                   tr
-                    td.pe-5.pb-3
+                    td.pe-md-5.pe-3.pb-3
                       strong.fw-medium Category:
-                    td.ps-5.pb-3
+                    td.ps-md-5.ps-4.pb-3
                       span.fw-light Injectable Steroids
                   tr
-                    td.pe-5.pb-3
+                    td.pe-md-5.pe-3.pb-3
                       strong.fw-medium Substance:
-                    td.ps-5.pb-3
+                    td.ps-md-5.ps-4.pb-3
                       span.fw-light Nandrolone Decanoate
                   tr
-                    td.pe-5.pb-3
+                    td.pe-md-5.pe-3.pb-3
                       strong.fw-medium Usage:
-                    td.ps-5.pb-3
+                    td.ps-md-5.ps-4.pb-3
                       span.fw-light Muscle Growth, Strength & performance, Endurance
 
-          .ps-16.mt-7
-            .border-top.pt-9
+          .ps-xl-16
+            ._text.fw-light.fs-16.border-top.d-flex.flex-column.row-gap-8.pt-md-9.pt-7
               p Ultima-Win – steroid from Ultima Pharmaceuticals company, designed for the rapid increase in the volume of dry muscle. This anabolic burn excess of body fat and, in addition, strengthens your skeletal system (due to the high content of phosphorus and calcium in the formulation). Because of its chemical composition, this anabolic does not aromatize into estrogen, so one may remove the need to take anti-estrogens on the cycle. The great advantage of the drug is that it does not retain water in the body of an athlete, for this reason, the muscles takes a better shape. These advantages make popular this type of steroid among athletes who want to improve their strength and endurance.
-
-
