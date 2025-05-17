@@ -1,0 +1,17 @@
+.news-item {
+  h1 {
+    line-height: 46px;
+
+    @include md {
+      line-height: 32px;
+    }
+  }
+
+  p {
+    line-height: 30px;
+
+    @include md {
+      line-height: 26px;
+    }
+  }
+}

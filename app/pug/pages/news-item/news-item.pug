@@ -1,18 +1,18 @@
-.container.pt-3
+.container.pt-md-3.pt-2
   .row
     .col-12.d-flex.align-items-center.column-gap-14
-      nav.mb-2(aria-label="breadcrumb")
-        ol.breadcrumb.mb-0
+      nav(aria-label="breadcrumb")
+        ol.fs-md-16.fs-14.ls-1.breadcrumb.mb-0
           li.breadcrumb-item
-            a.d-flex.align-items-center.column-gap-5.text-decoration-none(href="#")
+            a.d-flex.align-items-center.column-gap-md-5.column-gap-4.text-decoration-none(href="#")
               +icon('arrow-left')
               span.text-black.opacity-50 Back to News
-      hr.flex-grow-1
+      hr.flex-grow-1.d-lg-block.d-none
 
-.container.pt-7 
+.container.pt-md-7.pt-5.mb-md-0.mb-5
   .row
-    .col-12.d-flex.column-gap-16
-      aside.mw-239
+    .col-12.d-flex.column-gap-xl-16.column-gap-12
+      aside.mw-239.d-lg-block.d-none
         ul.nav.row-gap-5
           li.nav-item.flex-grow-1
             a.d-flex.justify-content-between.text-decoration-none.column-gap-4(href="#")
@@ -39,13 +39,15 @@
                 time.fw-light.fs-14.ls-1.text-black.opacity-30.lh-1.mb-1 24.03.2025 
                 span.fw-normal.fs-18.ls-1.text-black.opacity-50 Power Saver: Pharmacom International – Buy 1 Get 1 FREE
 
-      section.ps-4
+      section.b-news-item.ps-lg-4
         .d-flex.flex-column
-          time.fw-light.fs-14.lh-1.ls-1.mb-4.mt-2 24.03.2025
-          h1.fs-40.fw-semibold.ls-1.mb-9 Hot deal on Ultima-Win – 35% off until April 25 only!
-          .mb-9
+          time.fw-light.fs-md-14.fs-13.lh-1.ls-1.mb-md-4.mb-3.mt-2 24.03.2025
+          h1.fs-xxl-40.fs-xl-36.fs-lg-32.fs-md-30.fs-26.fw-semibold.ls-1.mb-md-9.mb-4 Hot deal on Ultima-Win – 35% off until April 25 only!
+          .mb-md-9.mb-4
             img.img-fluid(src="img/news-items/image-1.jpg" alt="Hot deal on Ultima-Win – 35% off until April 25 only!")
 
-          .d-flex.flex-column.row-gap-7.border-start.border-gray-light.fs-20.fw-normal.ls-1.ps-10.mw-965
-            p Champions don’t wait — they act. Whether you’re grinding hard or going for the win, Ultima-Win gives you the edge you need. For a limited time, claim your 35% discount and fuel your progress like never before.
-            p ⏳ Offer ends April 25 — go get it!
+          .d-flex
+            .vr.bg-gray-light.opacity-100.d-lg-inline-block.d-none
+            .d-flex.flex-column.row-gap-7.fs-md-20.fs-16.fw-normal.ls-1.ps-lg-10.mw-965
+              p Champions don’t wait — they act. Whether you’re grinding hard or going for the win, Ultima-Win gives you the edge you need. For a limited time, claim your 35% discount and fuel your progress like never before.
+              p ⏳ Offer ends April 25 — go get it!
