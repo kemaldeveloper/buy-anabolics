@@ -66,13 +66,13 @@ mixin btn(size, text, type = 'button')
 
 mixin newsPost(date, description, imgPath)
   .row
-    .col-5
+    .col-lg-5.col-12.mb-lg-0.mb-sm-6.mb-4
       .d-flex.flex-column
-        time.d-inline-block.fs-14.fw-light.lh-1.ls-1.mb-3= date
+        time.d-inline-block.fs-sm-14.fs-13.fw-light.lh-1.ls-1.mb-3= date
         a.link-black.link-opacity-75-hover.text-decoration-none(href="news-item.html")
-          p.fw-semibold.fs-40.ls-1= description
-    .col-7
-      .ps-16.ms-1
+          p.fw-semibold.fs-xxl-40.fs-sm-30.fs-26.ls-1= description
+    .col-lg-7.col-12
+      .ps-lg-16.ms-lg-1
         a.d-block.opacity-75-hover(href="news-item.html")
           img.img-fluid(src=imgPath alt=description)
 

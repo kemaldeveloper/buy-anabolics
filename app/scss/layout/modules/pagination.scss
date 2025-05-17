@@ -1,0 +1,7 @@
+.pagination {
+  .page-link {
+    @include sm {
+      padding: 3px 11.3px;
+    }
+  }
+}

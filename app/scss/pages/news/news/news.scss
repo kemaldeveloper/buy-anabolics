@@ -1,5 +1,13 @@
 .news {
   p {
     line-height: 46px;
+
+    @include xxl {
+      line-height: 40px;
+    }
+
+    @include sm {
+      line-height: 32px;
+    }
   }
 }
