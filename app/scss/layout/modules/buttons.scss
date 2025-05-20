@@ -8,4 +8,10 @@
   &-counter {
     @include button-variant(transparent, $gray-light, $black-50);
   }
+
+  &-lg {
+    @include md {
+      padding: 15px 69px;
+    }
+  }
 }

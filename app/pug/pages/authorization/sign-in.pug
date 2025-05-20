@@ -1,16 +1,16 @@
-section.mt-1
+section.mt-md-1.mt-3
   .container
     .row
-      .col-12.mb-9
-        .position-relative.mb-10
+      .col-12.mb-md-16.mb-sm-12.mb-4
+        .position-relative
           h2.text-danger.z-1.position-relative.bg-white.mx-auto.px-11(style="width: fit-content") Sign In
           hr.w-100.position-absolute.m-0.top-50.translate-middle-y.border-gray-light.opacity-100
-      .col-8.offset-2
-        .d-flex.ms-n8
-          .mw-450.flex-grow-1
+      .col-xxl-8.col-xxl-9.col-12.offset-xl-2.pt-3
+        .d-flex.ms-xl-n8.flex-xl-row.flex-column
+          .mw-xxl-450.mw-xl-350.flex-grow-1.mb-xl-0.mb-12
             form.needs-validation(action="#" method="GET" novalidate)
               .mb-7
-                input.form-control.form-control-lg.fs-18.border-transparent(type="text" name="name" placeholder="Name" required)
+                input.form-control.form-control-lg.fs-18.border-transparent(type="email" name="email" placeholder="Email" required)
                 .invalid-feedback.fw-light Please fill this field
               .mb-5
                 input.form-control.form-control-lg.fs-18.border-transparent(type="password" name="password" placeholder="Password" required)
@@ -22,9 +22,9 @@ section.mt-1
                 a.link-danger.text-decoration-none(href="#") Forgot Password?
               .col
                 button.btn.btn-danger.btn-lg.text-white.w-100(type="submit") Sign In
-          .vr.flex-shrink-0.ms-12.me-11
-          .mw-387
+          .vr.flex-shrink-0.ms-12.me-11.d-xl-inline-block.d-none
+          .mw-xl-387
             h3.text-danger.mb-5 New Customer
-            .fw-light.fs-18.ls-1.mb-10
+            .fw-light.fs-md-18.fs-16.ls-1.mb-10
               p By creating an account with our store, you will be able to move through the checkout process, store multiple shipping addresses, view and track your orders in your account and more.
             a.btn.btn-danger.btn-lg.text-white(href="#") Sign Up
