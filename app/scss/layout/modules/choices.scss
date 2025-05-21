@@ -30,7 +30,7 @@
       height: 6px;
       position: absolute;
       top: 50%;
-      right: 7px;
+      right: 9px;
       transform: translateY(-50%);
       transition: all 0.3s ease;
     }
@@ -41,7 +41,7 @@
   }
 
   &__inner {
-    padding: 5.5px 0 5.5px 11px;
+    padding: 9.5px 0 10.5px 12px;
     min-height: auto;
     border-color: #d1d1d1;
     font-size: inherit;
@@ -71,6 +71,10 @@
     &__list--single {
       padding-right: 34px;
 
+      &::before {
+        right: 7px;
+      }
+
       .choices__item--selectable {
         color: $black-50;
       }
@@ -79,11 +83,6 @@
     &__inner {
       padding: 9px 0 9px 11px;
     }
-
-    // .choices__list--dropdown .choices__item,
-    // .choices__list[aria-expanded] .choices__item {
-    //   padding: 11.5px 10px;
-    // }
   }
 }
 
