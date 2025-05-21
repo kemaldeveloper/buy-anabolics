@@ -69,9 +69,3 @@ a {
     opacity: 0.75;
   }
 }
-
-.container {
-  @include sm {
-    padding: 0 20px;
-  }
-}
