@@ -1,0 +1,7 @@
+.profile {
+  &__text {
+    @include md {
+      line-height: 26px;
+    }
+  }
+}

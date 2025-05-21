@@ -1,69 +1,74 @@
-section.pt-1
+section.b-profile.pt-md-1.pt-4
   .container
     .row
-      .col-12.mb-9
+      .col-12.mb-9.d-lg-block.d-none
         +linedTitle('Dashboard')
-      .col-3.pt-1
-        .list-group.list-group-flush.bg-secondary.px-6
-          a.list-group-item.list-group-item-action.fw-normal.fs-18.ls-1.ps-0.d-flex.align-items-center.column-gap-6.border-bottom-gray-light.active.text-decoration-underline.link-offset-1(href="#")
+      .col-xl-3.col-lg-4.col-12.pt-lg-1.mb-lg-0.mb-md-10.mb-8
+        .list-group.list-group-flush.bg-secondary.px-md-6.px-5
+          a.list-group-item.list-group-item-action.fw-normal.fs-xl-18.fs-16.ls-1.ps-0.d-flex.align-items-center.column-gap-md-6.column-gap-7.border-bottom-gray-light.active(href="#")
             +icon('dashboard')
             span Dashboard
-          a.list-group-item.list-group-item-action.fw-normal.fs-18.ls-1.ps-0.d-flex.align-items-center.column-gap-6.border-bottom-gray-light(href="#")
+          a.list-group-item.list-group-item-action.fw-normal.fs-xl-18.fs-16.ls-1.ps-0.d-flex.align-items-center.column-gap-md-6.column-gap-7.border-bottom-gray-light(href="#")
             +icon('lock')
             span Orders
-          a.list-group-item.list-group-item-action.fw-normal.fs-18.ls-1.ps-0.d-flex.align-items-center.column-gap-6.border-bottom-gray-light(href="#")
+          a.list-group-item.list-group-item-action.fw-normal.fs-xl-18.fs-16.ls-1.ps-0.d-flex.align-items-center.column-gap-md-6.column-gap-7.border-bottom-gray-light(href="#")
             +icon('location')
             span Adresses
-          a.list-group-item.list-group-item-action.fw-normal.fs-18.ls-1.ps-0.d-flex.align-items-center.column-gap-6.border-bottom-gray-light(href="#")
+          a.list-group-item.list-group-item-action.fw-normal.fs-xl-18.fs-16.ls-1.ps-0.d-flex.align-items-center.column-gap-md-6.column-gap-7.border-bottom-gray-light(href="#")
             +icon('chat')
             span Tickets
-          a.list-group-item.list-group-item-action.fw-normal.fs-18.ls-1.ps-0.d-flex.align-items-center.column-gap-6.border-bottom-gray-light(href="#")
+          a.list-group-item.list-group-item-action.fw-normal.fs-xl-18.fs-16.ls-1.ps-0.d-flex.align-items-center.column-gap-md-6.column-gap-7.border-bottom-gray-light(href="#")
             +icon('wallet')
             span Store Credit
-      .col-8
+      .col-xxl-8.col-xl-9.col-lg-8.col-12
+        .mb-md-6.mb-5.d-lg-none
+          +linedTitle('Dashboard')
+
         h5.fw-normal.fs-24.ls-1.mb-5 Hello, User
 
-        p.fw-light.fs-18.ls-1.mw-806.mb-12 From your account dashboard you can easily check & view your 
-          a.link-danger.text-decoration-none(href="#") recent orders, 
-          | manage your 
-          a.link-danger.text-decoration-none(href="#") shipping and billing addresses 
-          | and 
-          a.link-danger.text-decoration-none(href="#") edit your password 
-          | and account details.
+        ._text.mw-806.mb-md-12.mb-8
+          p.fw-light.fs-md-18.fs-16.ls-1 From your account dashboard you can easily check & view your 
+            a.link-danger.text-decoration-none(href="#") recent orders, 
+            | manage your 
+            a.link-danger.text-decoration-none(href="#") shipping and billing addresses 
+            | and 
+            a.link-danger.text-decoration-none(href="#") edit your password 
+            | and account details.
 
         h5.fw-normal.fs-24.ls-1.mb-5 My Orders:
 
-        .pe-6
-          table.table.table-hover.fw-medium.fs-16.ls-1
-            thead.fw-light
-              tr
-                td(scope="col") Action
-                td(scope="col") Order
-                td(scope="col") Date
-                td(scope="col") Status
-                td(scope="col") Total
-            tbody
-              tr
-                td
-                  a.link-danger.text-decoration-none.fw-medium.fs-16.ls-1(href="#") View Order
-                td 128883777901
-                td 2025-02-21 15:20:23
-                td
-                  span.text-danger Awaiting Payment
-                td $117.30
-              tr
-                td
-                  a.link-danger.text-decoration-none.fw-medium.fs-16.ls-1(href="#") View Order
-                td 128883777901
-                td 2025-02-21 15:20:23
-                td
-                  span.text-success Shipped
-                td $117.30
-              tr
-                td
-                  a.link-danger.text-decoration-none.fw-medium.fs-16.ls-1(href="#") View Order
-                td 128883777901
-                td 2025-02-21 15:20:23
-                td
-                  span.text-warning Payment Processing
-                td $117.30
+        .pe-md-6.me-sm-0.me-n5
+          .overflow-x-auto
+            table.table.table-hover.fw-medium.fs-16.ls-1.mnw-904
+              thead.fw-light
+                tr
+                  td(scope="col") Action
+                  td(scope="col") Order
+                  td(scope="col") Date
+                  td(scope="col") Status
+                  td(scope="col") Total
+              tbody
+                tr
+                  td
+                    a.link-danger.text-decoration-none.fw-medium.fs-16.ls-1(href="#") View Order
+                  td 128883777901
+                  td 2025-02-21 15:20:23
+                  td
+                    span.text-danger Awaiting Payment
+                  td $117.30
+                tr
+                  td
+                    a.link-danger.text-decoration-none.fw-medium.fs-16.ls-1(href="#") View Order
+                  td 128883777901
+                  td 2025-02-21 15:20:23
+                  td
+                    span.text-success Shipped
+                  td $117.30
+                tr
+                  td
+                    a.link-danger.text-decoration-none.fw-medium.fs-16.ls-1(href="#") View Order
+                  td 128883777901
+                  td 2025-02-21 15:20:23
+                  td
+                    span.text-warning Payment Processing
+                  td $117.30

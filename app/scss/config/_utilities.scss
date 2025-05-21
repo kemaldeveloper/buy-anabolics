@@ -41,6 +41,11 @@ $utilities: map-merge(
       class: grid-columns,
       responsive: true,
       values: $css-grid-columns
+    ),
+    "min-width": (
+      property: min-width,
+      class: mnw,
+      values: $min-widths
     )
   )
 );

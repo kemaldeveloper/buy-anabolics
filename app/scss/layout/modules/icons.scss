@@ -46,25 +46,50 @@
   &--dashboard {
     width: 21px;
     height: 23px;
+
+    @include md {
+      width: 16px;
+      height: 18px;
+    }
   }
 
   &--lock {
     width: 19px;
     height: 23px;
+
+    @include md {
+      width: 15px;
+      height: 18px;
+    }
   }
 
   &--location {
     width: 21px;
     height: 21px;
+
+    @include md {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   &--chat {
     width: 25px;
     height: 21px;
+
+    @include md {
+      width: 20px;
+      height: 17px;
+    }
   }
 
   &--wallet {
     width: 23px;
     height: 19px;
+
+    @include md {
+      width: 20px;
+      height: 16px;
+    }
   }
 }
